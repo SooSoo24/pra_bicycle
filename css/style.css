@@ -1,0 +1,160 @@
+/* common */
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 0 auto;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* header */
+
+
+header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 64px;
+
+  border: 2px solid black;
+}
+
+header .header_logo {
+  width: 128px;
+}
+
+
+header .header_logo a {
+  display: block;
+}
+
+
+header img {
+  width: 100%;
+  height: 100%;
+}
+
+header ul {
+  display: flex;
+
+  gap: 16px;
+}
+
+header a {
+  color: black;
+}
+
+
+
+/* hero */
+.hero {
+  border: 2px solid black;
+  text-align: center;
+}
+
+.hero img {
+  height: 600px;
+
+  object-fit: cover;
+}
+
+
+/* intro */
+.intro .wrapper {
+  text-align: center;
+
+  border: 2px solid black;
+}
+
+.intro section {
+  margin: 128px 0;
+}
+
+.intro h1 {
+  font-size: 32px;
+
+  display: inline-block;
+
+  text-align: center;
+
+  border-bottom: 4px solid black;
+}
+
+.intro h2 {
+  margin-top: 16px;
+}
+
+.intro p {
+  margin-top: 8px;
+}
+
+/* intro_about */
+.intro .intro_about img {
+  width: 100px;
+  margin-top: 64px;
+
+  border-radius: 50%;
+}
+
+.intro .intro_about .text_about {
+  text-align-last: left;
+}
+
+
+
+
+/* bicycle */
+.intro_bicycle .inner_bicycle {
+  margin-top: 48px;
+}
+
+
+/* footer */
+footer {
+  width: 100%;
+  height: 32px;
+
+  text-align: center;
+}
+
+
+
+/* media screen */
+@media (min-width: 600px){
+  .intro .intro_about img{
+    margin: 0 24px 0 0;
+  }
+  
+  
+  .inner_about{
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    justify-content: center;
+  }
+
+  .intro h2 {
+    margin-top: 8px;
+  }
+
+
+  .wrapper_bicycle{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .wrapper_bicycle .inner_bicycle{
+    width: calc((100% - 32px) / 3);
+  }
+}
